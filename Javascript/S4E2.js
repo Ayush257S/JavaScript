@@ -21,4 +21,5 @@ fruits.shift();//Revome items from start,change in origianl array
 console.log(fruits);
 console.log(fruits.slice(1,6));//return a piece of array or portion of array
 console.log(fruits.slice(1));//this means from one to end,ending index is not included
-// console.log(fruits.splice());
+console.log(fruits.splice(1,2,"grapes","guava"));//change original array (add,remove,replace)
+console.log(fruits);//can be use to add,replace,remove or change in array
