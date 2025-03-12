@@ -24,3 +24,19 @@ function sum(a,b) {//parameter work as local variable
     console.log(a+b);//variable are defined only for the block
 }
 sum(5,2);
+
+//Arrow function 
+//Part of morden js
+const arrowsum=(a,b)=>{//function is define here
+    console.log(a+b);
+}
+arrowsum(2,5);
+
+const mul=(a,b)=>{
+    console.log(a*b);
+}
+mul(2,5);
+
+const printhello=()=>{//without argument or parameter function can work
+    console.log("Hello");
+}
