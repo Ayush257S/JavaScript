@@ -13,4 +13,3 @@ console.log(`The new company is ${company}`);
 //c.
 company.push("Amazon");
 console.log(`The new companies are ${company}`);
-
