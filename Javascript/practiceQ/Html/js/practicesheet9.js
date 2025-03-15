@@ -6,5 +6,11 @@ let pass=num.filter((val)=>{
 console.log(pass);
 
 //Practice Q2
-prompt("Enter the number : ");
+let n=prompt("Enter the number : ");
 let arr=[];
+
+for(let i=1;i<=n;i++){
+    arr[i-1]=i;
+} 
+
+console.log(arr);
