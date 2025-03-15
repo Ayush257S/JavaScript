@@ -12,5 +12,14 @@ let arr=[];
 for(let i=1;i<=n;i++){
     arr[i-1]=i;
 } 
-
 console.log(arr);
+
+const newArr=arr.reduce((res,curr)=>{
+    return res+curr;
+});
+console.log(newArr);
+
+const newArr1=arr.reduce((res,curr)=>{
+    return res*curr;
+});
+console.log(newArr1);// No change in original array
