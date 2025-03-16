@@ -5,3 +5,8 @@
 
 console.dir(document);//shows the document object
 console.log(document);//shows the html document
+
+//DOM Manupulation
+//selting with id
+let id=document.getElementById("idselector");
+console.log(id);
