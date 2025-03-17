@@ -51,6 +51,9 @@ console.log(queryselectorall2);
 //tag name
 //returns the tag name of the element
 
+let tag=document.querySelector(".tag");
+console.log(tag.tagName);
+
 //innerText
 //returns the text content of the element and all its descendants
 let div=document.querySelector("div");
