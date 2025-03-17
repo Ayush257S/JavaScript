@@ -49,4 +49,32 @@ console.log(queryselectorall2);
 
 //dom manupulation properties
 //tag name
-queryselectorall1.getElementsByTagName
+//returns the tag name of the element
+
+//innerText
+//returns the text content of the element and all its descendants
+let div=document.querySelector("div");
+console.dir(div);
+console.log(div.innerText);
+
+//innerHTML
+//returns the inner html content of the element
+console.log(div.innerHTML);
+
+div.innerText="This is a new text";//changes the text content of the element
+console.log(div.innerText);
+
+
+let heading=document.querySelector("h1");
+console.log(heading);
+console.log(heading.innerHTML);
+heading.innerHTML="<h1>This is a new heading</h1>";
+console.log(heading);//heading is replaced by new heading
+console.log(heading.innerHTML);
+heading.innerHTML="<i>This is a new heading</i>";
+
+
+//TextContent
+//returns the text content of the element and all its descendants
+//returns textual content even from hidden elements
+console.log(heading.textContent);//hidden content is also displayed
