@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(246, 255, 0);
+            border: 1px solid black;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    
+    <button onclick="console.log('Button was Clicked'); alert('Hello');">Click Me</button>
+    <!-- when "" is used we outside we use '' inside the js code -->
+    <button ondblclick="console.log('Button was Clicked 2x');">Click me 2 times</button>
+    <!-- ondblclick is used for double click -->
+     <div onmouseover="console.log('you are inside div');">This is a box</div>
+
+     <!-- <div onmouseover="let div=document.querySelector('div');
+     div.style.backgroundColor='orange';">This is a box</div> -->
+
 </body>
 <script src="Javascript/S7E1.js"></script>
 </html>
