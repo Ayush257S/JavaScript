@@ -46,10 +46,15 @@ class ToyotaCar{
     Engine(){
         console.log("V8");
     }
+
+    setBrand(brand){
+        this.carCompany=brand;//what ever class this setBrand is called (this object is called)
+    }
 };
 
 let BMW=new ToyotaCar();
 let Lexus=new ToyotaCar();
 
 BMW.Speed();//all the properties and method of (ToyotaCar)class
+Lexus.setBrand("Lexus");
 Lexus.Engine();//will store in (Lexus & BMW)object. 
