@@ -49,6 +49,9 @@ class ToyotaCar{
 
     setBrand(brand){
         this.carCompany=brand;//what ever class this setBrand is called (this object is called)
+        //brand; is an arrgument or parameter for the funtion name setBrand
+        //this.carCompany is the property for all the objects of class name ToyotaCar
+
     }
 };
 
@@ -58,3 +61,9 @@ let Lexus=new ToyotaCar();
 BMW.Speed();//all the properties and method of (ToyotaCar)class
 Lexus.setBrand("Lexus");
 Lexus.Engine();//will store in (Lexus & BMW)object. 
+
+
+// Constructor
+//Constructor is a special method in a class
+//It is automatically invoked & is used to initialized an object
+
