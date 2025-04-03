@@ -67,3 +67,25 @@ Lexus.Engine();//will store in (Lexus & BMW)object.
 //Constructor is a special method in a class
 //It is automatically invoked & is used to initialized an object
 
+class student{
+
+    constructor(){
+        console.log("creating new object");
+    }
+
+    name(){
+        console.log("A");
+    }
+
+    class(){
+        console.log("12");
+    }
+
+    rollno(){
+        console.log("7");
+    }
+}
+
+//here constructor is called automatically even if constructor funtion is not called
+let B=new student();
+
