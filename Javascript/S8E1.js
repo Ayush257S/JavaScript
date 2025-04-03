@@ -48,7 +48,7 @@ class ToyotaCar{
     }
 
     setBrand(brand){
-        this.carCompany=brand;//what ever class this setBrand is called (this object is called)
+        this.carCompany=brand;//whan ever class setBrand is called (this object is called)
         //brand; is an arrgument or parameter for the funtion name setBrand
         //this.carCompany is the property for all the objects of class name ToyotaCar
 
@@ -69,9 +69,11 @@ Lexus.Engine();//will store in (Lexus & BMW)object.
 
 class student{
 
-    constructor(){
+    constructor(ID, marks){
         console.log("creating new object");
-    }
+        this.ID=ID;//this property can also be intialized in the constructor
+        this.marks=marks;
+    }   
 
     name(){
         console.log("A");
@@ -84,8 +86,12 @@ class student{
     rollno(){
         console.log("7");
     }
+
 }
 
 //here constructor is called automatically even if constructor funtion is not called
-let B=new student();
+let B=new student("AB7",97);
+console.log(B);
+let A=new student("AB5",95);
+console.log(A);
 
