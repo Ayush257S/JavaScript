@@ -4,7 +4,7 @@ class Parent{
     hello(){
         console.log("hello")
     }
-}
+};
 
 class Child extends Parent{}
 
@@ -28,4 +28,6 @@ class Person{
     work(){
         console.log("Do nothing");
     }
-}
+};
+
+
