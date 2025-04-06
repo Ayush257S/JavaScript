@@ -40,10 +40,14 @@ class engineer extends Person{//here the engineer(child class) inhert the proper
     work(){//if child and parent have same functions the child will get's more priority
         console.log("solve problems");//this is also know as method overridding
     }
-}
+};
 
 let personobj= new engineer();
 let p1= new Person();
 
+// super keyword
+//Is used to call a constructor of its parent class.
+//Access the parent class properties and methods.
 
+let engobj = new engineer("Computer Science");//super is used in a constructor
 
