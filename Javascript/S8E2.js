@@ -56,4 +56,4 @@ let engobj = new engineer("Computer Science", "JavaScript");//super is used in 
 console.log(engobj.name);//Accessing the properties of child class
 console.log(engobj.species);//Accessing the properties of parent class
 console.log(engobj.branch);//Accessing the properties of child class
-console.log(engobj.eat());//Accessing the method of parent class
+console.log(engobj.eat());//Accessing the method of parent classf
