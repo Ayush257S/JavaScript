@@ -10,3 +10,6 @@ console.log("three");
 setTimeout(()=>{
     console.log("hello");
 },5000); // Asynchronous code, will run after 5 seconds
+
+console.log("four");
+console.log("five");
