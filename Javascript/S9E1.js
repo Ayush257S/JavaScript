@@ -15,6 +15,7 @@ console.log("four");//This will run before the setTimeout function is executed
 console.log("five");//It will not wait for the setTimeout function to finish before executing this line of code
 
 //Callbacks
+//Callback funtion is a function passed as an argument to another function, which is then invoked inside the outer function
 function sum(a,b){
     console.log(a+b);
 }
@@ -25,4 +26,8 @@ function calculator(a,b, sumCallback){
 calculator(2,5, (a,b)=>{
     console.log(a+b);
 });
+
+//Callback hell
+//Callback hell is a situation where multiple nested callbacks make the code difficult to read and maintain
+//Nesting 
 
