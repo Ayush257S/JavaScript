@@ -22,3 +22,17 @@ function getData(DataID, getNextData){
 
 let result=getData(123);
 
+// A JavaScript Promise object can be in one of three states:
+//Pending: initial state, neither fulfilled nor rejected.(undefined)
+//Fulfilled: meaning that the operation completed successfully.(resolved),result
+//Rejected: meaning that the operation failed.(rejected),error
+
+const getPromise = ()=>{
+    new Promsie ((resolve,reject)=>{
+        console.log("Promise is created");
+        // reject("Error Occured");
+        resolve("Success");
+    });
+};
+
+let promise1= getPromise();
