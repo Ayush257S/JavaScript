@@ -37,5 +37,5 @@ const getPromise = ()=>{
 
 let promise1= getPromise();
 promise1.then((result)=>{
-    console.log("Promise Fullfiled");
+    console.log("Promise Fullfiled",result);
 });
