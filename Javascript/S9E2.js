@@ -28,7 +28,7 @@ let result=getData(123);
 //Rejected: meaning that the operation failed.(rejected),error
 
 const getPromise = ()=>{
-    new Promise ((resolve,reject)=>{
+    return new Promise ((resolve,reject)=>{
         console.log("Promise is created");
         // reject("Error Occured");
         resolve("Success");
@@ -36,6 +36,6 @@ const getPromise = ()=>{
 };
 
 let promise1= getPromise();
-promise1.then((result)=>{
+promise1.then((result)=>{//
     console.log("Promise Fullfiled",result);
 });
