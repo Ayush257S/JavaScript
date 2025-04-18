@@ -37,12 +37,12 @@ const getPromise = ()=>{
 
 // Then method is used to handle the success of the promise
 let promise1= getPromise();
-promise1.then((result)=>{//
-    console.log("Promise Fullfiled",result);
+promise1.then((res)=>{
+    console.log("Promise Fullfiled",res);
 });
 
 // Catch method is used to handle the error of the promise
-promise1.catch(()=>{
-    console.log("rejected");
+promise1.catch((err)=>{
+    console.log("rejected",err);
 });
 
