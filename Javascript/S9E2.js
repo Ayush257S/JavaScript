@@ -46,3 +46,10 @@ promise1.catch((err)=>{
     console.log("rejected",err);
 });
 
+
+// Promsie chaining
+
+function asyncFunc() {
+    return new promise((resolve,reject)=>{
+    })
+}
