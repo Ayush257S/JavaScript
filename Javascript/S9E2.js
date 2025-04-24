@@ -50,6 +50,43 @@ promise1.catch((err)=>{
 // Promsie chaining
 
 function asyncFunc() {
-    return new promise((resolve,reject)=>{
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            console.log("Data 5"); 
+            resolve("Successfully resolved");
+        }, 3000);
+    });
+}
+
+console.log("fetching data 5");
+let p1=asyncFunc();
+p1.then((res)=>{
+    console.log(res);
+}); 
+
+// Data chaining
+function asyncFunc2() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("Data 2");
+            resolve("successfully resolve");
+        },10000);
     })
 }
+
+function asyncFunc3() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("Data 3");
+            resolve("successfully resolve");
+        },10000);
+    })
+}
+
+console.log("fetching data 2");
+let p2=asyncFunc2();
+p2.then((res)=>{//when p2 is resoslved then only p3 will fetch and will be resolve
+    console.log("fetching data 3");
+    let p3=asyncFunc3();
+    p3.then((res)=>{}); 
+}); 
