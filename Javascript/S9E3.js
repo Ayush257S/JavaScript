@@ -25,3 +25,13 @@ getData(1).then((res)=>{//first getData 1 is resolved
 }).then((res)=>{
     console.log(res);
 });
+
+//callback hell << promise chain << async await
+//Async await 
+//Async function always return a promise
+
+async function hello() {
+    console.log("Hello");
+}; 
+
+//Await pauses the execution of its surroundings async fuction until the promise is settled
