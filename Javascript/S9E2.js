@@ -64,7 +64,7 @@ p1.then((res)=>{
     console.log(res);
 }); 
 
-// Data chaining
+//Example 2
 function asyncFunc2() {
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
@@ -89,4 +89,10 @@ p2.then((res)=>{//when p2 is resoslved then only p3 will fetch and will be resol
     console.log("fetching data 3");
     let p3=asyncFunc3();
     p3.then((res)=>{}); 
+}); 
+
+//Better way of writing
+asyncFunc2().then((res)=>{
+    console.log("fetching data 3");
+    asyncFunc3().then((res)=>{}); 
 }); 
